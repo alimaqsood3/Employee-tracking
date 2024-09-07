@@ -12,7 +12,9 @@ let employees = [
     { name: 'John Doe', department: 'HR', position: 'Manager', status: 'Active' },
     { name: 'Jane Smith', department: 'Finance', position: 'Analyst', status: 'Active' }
 ];
-
+app.get('/', (req, res) => {
+  res.send('I am working');
+});
 // 1. Get Dashboard Data
 app.get('/api/dashboard', (req, res) => {
     res.json({
